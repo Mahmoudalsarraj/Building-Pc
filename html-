@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BP - Let's Build Your Dream</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>BP - Let's Build Your Dream</h1>
+        <nav>
+            <ul>
+                <li><a href="#configure">PC Konfigurieren</a></li>
+                <li><a href="#about">Über Uns</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="configure">
+            <h2>PC-Konfigurator</h2>
+            <p>Wählen Sie Ihre bevorzugten Komponenten aus:</p>
+            <form id="pc-configurator">
+                <label for="cpu">CPU:</label>
+                <select id="cpu" name="cpu">
+                    <option value="200">Intel Core i5 - 200€</option>
+                    <option value="300">Intel Core i7 - 300€</option>
+                    <option value="400">Intel Core i9 - 400€</option>
+                </select>
+
+                <label for="gpu">GPU:</label>
+                <select id="gpu" name="gpu">
+                    <option value="500">NVIDIA RTX 3060 - 500€</option>
+                    <option value="800">NVIDIA RTX 3070 - 800€</option>
+                    <option value="1200">NVIDIA RTX 3080 - 1200€</option>
+                </select>
+
+                <label for="ram">RAM:</label>
+                <select id="ram" name="ram">
+                    <option value="100">16GB DDR4 - 100€</option>
+                    <option value="150">32GB DDR4 - 150€</option>
+                    <option value="200">64GB DDR4 - 200€</option>
+                </select>
+
+                <label for="storage">Speicher:</label>
+                <select id="storage" name="storage">
+                    <option value="50">1TB HDD - 50€</option>
+                    <option value="100">500GB SSD - 100€</option>
+                    <option value="200">1TB SSD - 200€</option>
+                </select>
+
+                <p><strong>Gesamtpreis: <span id="total-price">0</span>€</strong></p>
+                <!-- Hier kannst du später die PayPal-Integration hinzufügen -->
+            </form>
+        </section>
+
+        <section id="about">
+            <h2>Über Uns</h2>
+            <p>Willkommen bei BP - Ihrem vertrauenswürdigen Partner für maßgeschneiderte PCs. Wir bauen Ihren Traum-PC nach Ihren Wünschen und liefern ihn direkt zu Ihnen nach Hause.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Kontakt</h2>
+            <p>Haben Sie Fragen? Kontaktieren Sie uns unter <a href="mailto:info@buildingpc.com">info@buildingpc.com</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 BP - Building PC. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
