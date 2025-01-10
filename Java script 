@@ -1,0 +1,23 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const cpuSelect = document.getElementById('cpu');
+    const gpuSelect = document.getElementById('gpu');
+    const ramSelect = document.getElementById('ram');
+    const storageSelect = document.getElementById('storage');
+    const totalPriceField = document.getElementById('total-price');
+
+    function calculateTotal() {
+        const cpuPrice = parseInt(cpuSelect.value);
+        const gpuPrice = parseInt(gpuSelect.value);
+        const ramPrice = parseInt(ramSelect.value);
+        const storagePrice = parseInt(storageSelect.value);
+
+        const totalPrice = cpuPrice + gpuPrice + ramPrice + storagePrice;
+        totalPriceField.textContent = totalPrice;
+    }
+
+    [cpuSelect, gpuSelect, ramSelect, storageSelect].forEach(select => {
+        select.addEventListener('change', calculateTotal);
+    });
+
+    calculateTotal();
+});
